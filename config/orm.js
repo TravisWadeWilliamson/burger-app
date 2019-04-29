@@ -1,5 +1,5 @@
 // Import MySQL connection.
-var connection = require("../config/connection.js");
+let connection = require("../config/connection.js");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
@@ -7,7 +7,7 @@ var connection = require("../config/connection.js");
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
 function printQuestionMarks(num) {
-  var arr = [];
+  const arr = [];
 
   for (var i = 0; i < num; i++) {
     arr.push("?");
@@ -18,7 +18,7 @@ function printQuestionMarks(num) {
 
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
-  var arr = [];
+  let arr = [];
 
   // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
@@ -40,7 +40,7 @@ function objToSql(ob) {
 }
 
 // Object for all our SQL statement functions.
-var orm = {
+let orm = {
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
