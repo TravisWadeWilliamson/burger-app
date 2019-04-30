@@ -1,6 +1,10 @@
 INSERT INTO burger (burger_name, eated_up) VALUES ('Seoul Burger', true);
 INSERT INTO burger (burger_name) VALUES ('Tokyo Burger');
 INSERT INTO burger (burger_name, eated_up) VALUES ("Ain't No Meat Burger", true);
-INSERT INTO burger (burger_name) VALUES ('Hanoi Burger');
+INSERT INTO burger (burger_name, eated_up) VALUES ('Hanoi Burger', true);
 INSERT INTO burger (burger_name) VALUES ('London Burger');
 INSERT INTO burger (burger_name) VALUES ('Rabat Burger');
+INSERT INTO burger (burger_name, eated_up) VALUES ("St. Petersburg Burger", true);
+INSERT INTO burger (burger_name) VALUES ('New Delhi Non-cow Burger');
+INSERT INTO burger (burger_name, eated_up) VALUES ('Canberra Burger', true);
+INSERT INTO burger (burger_name) VALUES ('Washington DC Burger');

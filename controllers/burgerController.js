@@ -9,7 +9,8 @@ let burger = require("../models/burger.js");
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
-      burgers: data
+      //burger is what the variable in index.handlebars will reference
+      burger: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
@@ -18,7 +19,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/burgers", function(req, res) {
   burger.create([
-    "name", "eated_up"
+    "burger_name", "eated_up"
   ], [
     req.body.name, req.body.eated_up
   ], function(result) {
