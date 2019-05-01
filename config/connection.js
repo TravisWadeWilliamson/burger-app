@@ -8,9 +8,9 @@ let connection_MySQL = mysql.createConnection({
   password: process.env.EXPRESS_PASS,
   database: "burgers_db"
 });
-
+ 
 // Make connection.
-connection_MySQL.connect(function(err) {
+connection_MySQL.connect(function (err) {
   if (err) {
     console.error(`Error connecting to MySQL ${err.stack}`);
     return;

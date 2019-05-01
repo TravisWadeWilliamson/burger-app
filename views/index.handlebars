@@ -4,9 +4,9 @@
 
 <ul>
   {{#each burger}}
-    {{#unless eated_up}}
-      {{> burgers/burger-block eated_up=false}}
-    {{/unless}}
+  {{#unless eated_up}}
+  {{> burgers/burger-block }}
+  {{/unless}}
   {{/each}}
 </ul>
 
@@ -14,9 +14,9 @@
 
 <ul>
   {{#each burger}}
-    {{#if eated_up}}
-      {{> burgers/burger-block eated_up=true}}
-    {{/if}}
+  {{#if eated_up}}
+  {{> burgers/burger-block }}
+  {{/if}}
   {{/each}}
 </ul>
 
